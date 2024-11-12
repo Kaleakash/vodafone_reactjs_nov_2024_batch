@@ -5,8 +5,8 @@ function App() {
   return (
     <div>
       <h2>React Component creation in different style</h2>
-      <EmployeeFunctionStyle></EmployeeFunctionStyle>
-      <EmployeeClassStyle></EmployeeClassStyle>
+      <EmployeeFunctionStyle designation="Tester"></EmployeeFunctionStyle>
+      <EmployeeClassStyle designation="Developer"></EmployeeClassStyle>
     </div>
   );
 }
