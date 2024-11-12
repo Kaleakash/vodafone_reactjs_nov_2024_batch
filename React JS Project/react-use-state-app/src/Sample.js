@@ -6,7 +6,7 @@ let age = 21;                       // local variable
 let handleClick = function() {
     console.log(name)
     console.log(age)
-    //setName("Raj Kumar");       // asynchronous 
+    setName("Raj Kumar");       // asynchronous 
     name="Raj Deep"
     age=24;
     console.log("After change")
