@@ -1,8 +1,6 @@
 const { useState } = require("react")
-
 function Product() {
 let [product,setProduct]=useState({pid:100,pname:"TV",price:54000});
-
 let changeProduct= function() {
     //setProduct({pid:101,pname:"Sony Tv",price:56000});// all property change
     setProduct(previousProduct=>{

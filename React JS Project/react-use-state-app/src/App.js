@@ -3,6 +3,7 @@ import './App.css';
 import Sample from './Sample';
 import Counter from './Couter';
 import Product from './Product';
+import ArrayStateVariables from './ArrayStateVariables';
 
 function App() {
   // single line comments 
@@ -15,7 +16,8 @@ function App() {
       {/* <Sample></Sample>
       <hr/>
       <Counter></Counter> */}
-      <Product></Product>
+      {/* <Product></Product> */}
+      <ArrayStateVariables></ArrayStateVariables>
     </div>
   );
 }
