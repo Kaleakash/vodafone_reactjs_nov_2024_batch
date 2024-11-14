@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ProductOperation.css';        // it is equal to link tag 
 
 function ProductOperation() {
 let [products,setProducts]=useState(
@@ -25,8 +26,7 @@ let handleSubmit=function(event){
 }
     return(
         <div>
-            <h3>Product Operation</h3>
-
+    <h3 style={{"color":"red","backgroundColor":"yellow","fontSize":"30pt"}}>Product Operation</h3>
             <form onSubmit={handleSubmit}>
                 <label>PId</label>
                 <input type="number" name="pid" value={product.pid}
@@ -46,7 +46,7 @@ let handleSubmit=function(event){
 
             <hr/>
 
-            <h3>All Product Details</h3>
+            <h3 className="headingClass">All Product Details</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -72,6 +72,4 @@ let handleSubmit=function(event){
         </div>
     )
 }
-
-
 export default ProductOperation;
