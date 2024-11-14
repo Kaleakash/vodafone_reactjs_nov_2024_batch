@@ -10,6 +10,9 @@ function reducer(state,action) {
     if(action.type=="DECREMENT"){
         return {...state,counter:state.counter-1}
     }
+    if(action.type=="UPDATE"){
+        return {...state,name:state.name+" Kale"}
+    }
     return state;
 }
 let initialState = {counter:0,name:"Akash"}
@@ -22,6 +25,7 @@ let [state,dispatch]=useReducer(reducer,initialState)
            <p>counter value is {state.counter}</p>
            <input type="button" value="Increment" onClick={()=>dispatch({type:"INCREMENT"})}/>
            <input type="button" value="Decrement" onClick={()=>dispatch({type:"DECREMENT"})}/>
+           <input type="button" value="Update Name" onClick={()=>dispatch({type:"UPDATE"})}/>
         </div>
     )
 }
