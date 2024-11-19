@@ -6,8 +6,8 @@ import UseEffectExample from './UseEffectExample';
 function App() {
   return (
     <div className="App">
-      {/* <Products></Products> */}
-      <UseEffectExample></UseEffectExample>
+      <Products></Products>
+      {/* <UseEffectExample></UseEffectExample> */}
     </div>
   );
 }

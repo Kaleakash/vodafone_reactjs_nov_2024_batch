@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Products() {
 let [products,setProducts]=useState([]);
+
+useEffect(()=> {
+    loadLiveProductDetails();
+},[])
 
 let loadLiveProductDetails = function() {
 fetch("https://fakestoreapi.com/products").then(response=>response.json()).then(result=>setProducts(result)).catch(error=>console.log(error));
@@ -9,8 +13,7 @@ fetch("https://fakestoreapi.com/products").then(response=>response.json()).then(
     return(
         <div>
             <h3>All Product Details</h3>
-            <input type="button" value="Load Product"
-            onClick={loadLiveProductDetails}/>
+            
             {
                 products.map((p,index)=>
                 <div key={index} style={{"display":"inline","width":"400px"}}>
