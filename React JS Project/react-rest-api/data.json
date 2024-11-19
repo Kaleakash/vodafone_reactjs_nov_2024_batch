@@ -1,0 +1,5 @@
+{
+    "products":[
+        {"id":100,"pname":"TV","price":560000}
+    ]
+}
