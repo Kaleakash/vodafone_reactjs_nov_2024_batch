@@ -5,6 +5,7 @@ import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import Feedback from './Feedback';
 import Login from './Login';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <h3>React Routing Example</h3>
         <Link to="/about_us">AboutUs</Link> |
         <Link to="/contact_us">ContactUs</Link> |
-        <Link to="/feedback">FeedUs</Link> |
+        <Link to="/feedback">FeedBack</Link> |
         <Link to="/login">Login</Link> |
       </div>
       <hr/>
@@ -22,6 +23,7 @@ function App() {
           <Route path='/contact_us' element={<ContactUs></ContactUs>}></Route>
           <Route path='/feedback' element={<Feedback></Feedback>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/home' element={<Dashboard></Dashboard>}></Route>
       </Routes>
     </BrowserRouter>
   );
